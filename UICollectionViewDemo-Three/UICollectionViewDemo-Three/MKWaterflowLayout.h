@@ -14,9 +14,9 @@
 
 @required
 /**
- * 返回indexPath位置cell的高度
+ * 返回indexPath位置cell的宽高比
  */
-- (CGFloat)waterflowLayout:(MKWaterflowLayout *)waterflowLayout heightForItemAtIndexPath:(NSIndexPath *)indexPath;
+- (CGFloat)waterflowLayout:(MKWaterflowLayout *)waterflowLayout widthHeightRatioForItemAtIndexPath:(NSIndexPath *)indexPath;
 
 @optional
 

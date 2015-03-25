@@ -32,9 +32,11 @@ static NSString * const ID = @"Cell";
 
 #pragma mark - <MKWaterflowLayoutDelegate>
 
-- (CGFloat)waterflowLayout:(MKWaterflowLayout *)waterflowLayout heightForItemAtIndexPath:(NSIndexPath *)indexPath {
+- (CGFloat)waterflowLayout:(MKWaterflowLayout *)waterflowLayout widthHeightRatioForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    return arc4random_uniform(100) + 50;
+    CGFloat m = 10;
+    
+    return m / (arc4random_uniform(20) + 1);
 }
 
 #pragma mark - <UICollectionViewDataSource>

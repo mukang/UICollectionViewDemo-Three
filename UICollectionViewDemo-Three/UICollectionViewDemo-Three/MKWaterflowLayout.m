@@ -138,7 +138,9 @@ static const CGFloat MK_Default_Column_Count = 3;
     CGFloat w = (MKCollectionViewWidth - xMargin) / self.columnCount;
     
     // cell的高度
-    CGFloat h = [self.delegate waterflowLayout:self heightForItemAtIndexPath:indexPath];
+    CGFloat ratio = [self.delegate waterflowLayout:self widthHeightRatioForItemAtIndexPath:indexPath];
+    
+    CGFloat h = w / ratio;
     
     // 找出最短那一列的最大Y值和列号
     CGFloat destMaxY = [self.columnMaxYs[0] doubleValue];
