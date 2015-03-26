@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A5DC4461AC38BD00061A4D6 /* MKWaterflowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5DC4451AC38BD00061A4D6 /* MKWaterflowLayout.m */; };
 		7A70227B1AC29F880076B1F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A70227A1AC29F880076B1F1 /* main.m */; };
 		7A70227E1AC29F880076B1F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A70227D1AC29F880076B1F1 /* AppDelegate.m */; };
 		7A7022841AC29F880076B1F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A7022821AC29F880076B1F1 /* Main.storyboard */; };
@@ -14,7 +15,6 @@
 		7A7022891AC29F880076B1F1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A7022871AC29F880076B1F1 /* LaunchScreen.xib */; };
 		7A7022951AC29F880076B1F1 /* UICollectionViewDemo_ThreeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7022941AC29F880076B1F1 /* UICollectionViewDemo_ThreeTests.m */; };
 		7A7022A01AC2A2410076B1F1 /* MKCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A70229F1AC2A2410076B1F1 /* MKCollectionViewController.m */; };
-		7A7022A31AC2A47C0076B1F1 /* MKWaterflowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7022A21AC2A47C0076B1F1 /* MKWaterflowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A5DC4441AC38BD00061A4D6 /* MKWaterflowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKWaterflowLayout.h; sourceTree = "<group>"; };
+		7A5DC4451AC38BD00061A4D6 /* MKWaterflowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKWaterflowLayout.m; sourceTree = "<group>"; };
 		7A7022751AC29F880076B1F1 /* UICollectionViewDemo-Three.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UICollectionViewDemo-Three.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7022791AC29F880076B1F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A70227A1AC29F880076B1F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,8 +43,6 @@
 		7A7022941AC29F880076B1F1 /* UICollectionViewDemo_ThreeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewDemo_ThreeTests.m; sourceTree = "<group>"; };
 		7A70229E1AC2A2410076B1F1 /* MKCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCollectionViewController.h; sourceTree = "<group>"; };
 		7A70229F1AC2A2410076B1F1 /* MKCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCollectionViewController.m; sourceTree = "<group>"; };
-		7A7022A11AC2A47C0076B1F1 /* MKWaterflowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKWaterflowLayout.h; sourceTree = "<group>"; };
-		7A7022A21AC2A47C0076B1F1 /* MKWaterflowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKWaterflowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +63,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A5DC4431AC38BD00061A4D6 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				7A5DC4441AC38BD00061A4D6 /* MKWaterflowLayout.h */,
+				7A5DC4451AC38BD00061A4D6 /* MKWaterflowLayout.m */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
 		7A70226C1AC29F880076B1F1 = {
 			isa = PBXGroup;
 			children = (
@@ -84,10 +93,9 @@
 		7A7022771AC29F880076B1F1 /* UICollectionViewDemo-Three */ = {
 			isa = PBXGroup;
 			children = (
+				7A5DC4431AC38BD00061A4D6 /* Lib */,
 				7A70227C1AC29F880076B1F1 /* AppDelegate.h */,
 				7A70227D1AC29F880076B1F1 /* AppDelegate.m */,
-				7A7022A11AC2A47C0076B1F1 /* MKWaterflowLayout.h */,
-				7A7022A21AC2A47C0076B1F1 /* MKWaterflowLayout.m */,
 				7A70229E1AC2A2410076B1F1 /* MKCollectionViewController.h */,
 				7A70229F1AC2A2410076B1F1 /* MKCollectionViewController.m */,
 				7A7022821AC29F880076B1F1 /* Main.storyboard */,
@@ -228,7 +236,7 @@
 				7A7022A01AC2A2410076B1F1 /* MKCollectionViewController.m in Sources */,
 				7A70227E1AC29F880076B1F1 /* AppDelegate.m in Sources */,
 				7A70227B1AC29F880076B1F1 /* main.m in Sources */,
-				7A7022A31AC2A47C0076B1F1 /* MKWaterflowLayout.m in Sources */,
+				7A5DC4461AC38BD00061A4D6 /* MKWaterflowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +431,7 @@
 				7A70229A1AC29F880076B1F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A70229B1AC29F880076B1F1 /* Build configuration list for PBXNativeTarget "UICollectionViewDemo-ThreeTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +440,7 @@
 				7A70229D1AC29F880076B1F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
